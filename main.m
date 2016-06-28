@@ -18,8 +18,8 @@ int main(int argc, const char * argv[]) {
         NSString *inputString = [NSString stringWithUTF8String:inputChars];
         
         inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-//
-//        inputString = [inputString stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+
+        inputString = [inputString stringByReplacingOccurrencesOfString:@" " withString:@"-"];
         
         if ([inputString hasSuffix:@"?"]) {
             NSLog(@"I don't know");
