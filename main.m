@@ -33,25 +33,25 @@ int main(int argc, const char * argv[]) {
         NSString *loudString = [inputString uppercaseString];
 
         NSString *quietString = [inputString lowercaseString];
-//
-//        NSString *canadianize = [inputString stringByAppendingString:(@"eh")];
+
+        NSString *canadianize = [inputString stringByAppendingString:(@"eh")];
     
-        NSLog(@"Input was %@ ", loudString/*,canadianize*/);
+        NSLog(@"Input was %@ %@", loudString,canadianize);
         
-        NSLog(@" and %@ ", quietString/*,canadianize*/);
+        NSLog(@" and %@ %@", quietString,canadianize);
 
 
-//        
+       
        double myDouble = [inputString doubleValue];
-//
-        NSLog(@"input was %f", myDouble/*, canadianize*/);
-//
+
+        NSLog(@"input was %f %@", myDouble, canadianize);
+
         
         
         
         printf("Your string says %s \n", inputChars);
         
-//        NSLog(@"Input was: %@ %@", inputString, canadianize);
+        NSLog(@"Input was: %@ %@", inputString, canadianize);
     }
     return 0;
 }
