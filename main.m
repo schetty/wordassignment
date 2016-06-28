@@ -42,10 +42,10 @@ int main(int argc, const char * argv[]) {
 
 
 //        
-//       double myDouble = [inputString doubleValue];
-//        
-//        NSLog(@"input was %f %@", myDouble, canadianize);
-//        
+       double myDouble = [inputString doubleValue];
+//
+        NSLog(@"input was %f", myDouble/*, canadianize*/);
+//
         
         
         
