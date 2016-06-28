@@ -32,13 +32,13 @@ int main(int argc, const char * argv[]) {
         
         NSString *loudString = [inputString uppercaseString];
 
-//        NSString *quietString = [inputString lowercaseString];
-//        
+        NSString *quietString = [inputString lowercaseString];
+//
 //        NSString *canadianize = [inputString stringByAppendingString:(@"eh")];
     
         NSLog(@"Input was %@ ", loudString/*,canadianize*/);
         
-//        NSLog(@" and %@  %@", quietString, canadianize);
+        NSLog(@" and %@ ", quietString/*,canadianize*/);
 
 
 //        
