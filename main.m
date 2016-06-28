@@ -17,18 +17,18 @@ int main(int argc, const char * argv[]) {
         
         NSString *inputString = [NSString stringWithUTF8String:inputChars];
         
-//        inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-//        
+        inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+//
 //        inputString = [inputString stringByReplacingOccurrencesOfString:@" " withString:@"-"];
-//        
-//        if ([inputString hasSuffix:@"?"]) {
-//            NSLog(@"I don't know");
-//        } else if ([inputString hasSuffix:@"!"]){
-//            NSLog(@"Whoa, calm down!");
-//        }
-//        else {
-//            NSLog(@"ok");
-//        }
+        
+        if ([inputString hasSuffix:@"?"]) {
+            NSLog(@"I don't know");
+        } else if ([inputString hasSuffix:@"!"]){
+            NSLog(@"Whoa, calm down!");
+        }
+        else {
+            NSLog(@"ok");
+        }
         
         NSString *loudString = [inputString uppercaseString];
 
