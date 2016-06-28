@@ -17,13 +17,41 @@ int main(int argc, const char * argv[]) {
         
         NSString *inputString = [NSString stringWithUTF8String:inputChars];
         
+//        inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+//        
+//        inputString = [inputString stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+//        
+//        if ([inputString hasSuffix:@"?"]) {
+//            NSLog(@"I don't know");
+//        } else if ([inputString hasSuffix:@"!"]){
+//            NSLog(@"Whoa, calm down!");
+//        }
+//        else {
+//            NSLog(@"ok");
+//        }
+        
         NSString *loudString = [inputString uppercaseString];
+
+//        NSString *quietString = [inputString lowercaseString];
+//        
+//        NSString *canadianize = [inputString stringByAppendingString:(@"eh")];
+    
+        NSLog(@"Input was %@ ", loudString/*,canadianize*/);
         
-        NSLog(@"Input was %@", loudString);
+//        NSLog(@" and %@  %@", quietString, canadianize);
+
+
+//        
+//       double myDouble = [inputString doubleValue];
+//        
+//        NSLog(@"input was %f %@", myDouble, canadianize);
+//        
         
-        printf("Your string says %s\n", inputChars);
         
-        NSLog(@"Input was: %@", inputString);
+        
+        printf("Your string says %s \n", inputChars);
+        
+//        NSLog(@"Input was: %@ %@", inputString, canadianize);
     }
     return 0;
 }
