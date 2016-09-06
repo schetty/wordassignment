@@ -22,7 +22,7 @@ int main(int argc, const char * argv[]) {
         inputString = [inputString stringByReplacingOccurrencesOfString:@" " withString:@"-"];
         
         if ([inputString hasSuffix:@"?"]) {
-            NSLog(@"I don't know");
+            NSLog(@"I don't know\n");
         } else if ([inputString hasSuffix:@"!"]){
             NSLog(@"Whoa, calm down!");
         }
@@ -34,17 +34,17 @@ int main(int argc, const char * argv[]) {
 
         NSString *quietString = [inputString lowercaseString];
 
-        NSString *canadianize = [inputString stringByAppendingString:(@"eh")];
+        NSString *canadianize = [inputString stringByAppendingString:(@"eh\n")];
     
-        NSLog(@"Input was %@ %@", loudString,canadianize);
+        NSLog(@"Input was  %@ \n  %@", loudString,canadianize);
         
-        NSLog(@" and %@ %@", quietString,canadianize);
+        NSLog(@" and  %@ \n  %@", quietString,canadianize);
 
 
        
        double myDouble = [inputString doubleValue];
 
-        NSLog(@"input was %f %@", myDouble, canadianize);
+        NSLog(@"input was %f %@ \n", myDouble, canadianize);
 
         
         
